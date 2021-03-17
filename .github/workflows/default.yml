@@ -1,0 +1,48 @@
+name: Default
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: [ 1.13, 1.14 ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go }}
+
+      - name: Run tests
+        run:  make test
+
+  benchmark:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: [ 1.13, 1.14 ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go }}
+
+      - name: Benchmark code
+        run:  make benchmark
+
+  semantic-release:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run semantic-release
+        if: github.repository == 'qurami/casbin-cloud-storage-adapter' && github.event_name == 'push'
+        run: make release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
