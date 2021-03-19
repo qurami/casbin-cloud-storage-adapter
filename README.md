@@ -27,7 +27,7 @@ import (
 
 	"cloud.google.com/go/storage"
 	"github.com/casbin/casbin/v2"
-	cloudstorageadapter "github.com/qurami/casbin-cloud-storage-adapter/v1"
+	cloudstorageadapter "github.com/qurami/casbin-cloud-storage-adapter"
 )
 
 func main() {

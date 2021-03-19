@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	casbin "github.com/casbin/casbin/v2"
+	"github.com/casbin/casbin/v2"
 	"github.com/casbin/casbin/v2/model"
 	"github.com/fsouza/fake-gcs-server/fakestorage"
 )

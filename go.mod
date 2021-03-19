@@ -1,4 +1,4 @@
-module github.com/qurami/casbin-cloud-storage-adapter/v1
+module github.com/qurami/casbin-cloud-storage-adapter
 
 go 1.14
 
