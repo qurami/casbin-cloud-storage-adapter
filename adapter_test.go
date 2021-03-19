@@ -53,7 +53,7 @@ func TestNewAdapter(t *testing.T) {
 			},
 		},
 		Host: "127.0.0.1",
-		Port: 65123,
+		Port: 10987,
 	})
 	if err != nil {
 		panic(err)
@@ -113,7 +113,7 @@ func TestAdapter(t *testing.T) {
 			},
 		},
 		Host: "127.0.0.1",
-		Port: 65122,
+		Port: 10986,
 	})
 	if err != nil {
 		panic(err)
