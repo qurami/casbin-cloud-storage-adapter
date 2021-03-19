@@ -3,7 +3,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/qurami/casbin-cloud-storage-adapter)](https://goreportcard.com/report/github.com/qurami/casbin-cloud-storage-adapter)
 [![Build Status](https://travis-ci.com/casbin/casbin.svg?branch=master)](https://travis-ci.com/casbin/casbin)
 [![Coverage Status](https://coveralls.io/repos/github/qurami/casbin-cloud-storage-adapter/badge.svg)](https://coveralls.io/github/qurami/casbin-cloud-storage-adapter)
-[![Godoc](https://godoc.org/github.com/qurami/casbin-cloud-storage-adapter?status.svg)](https://pkg.go.dev/github.com/qurami/casbin-cloud-storage-adapter/v1)
+[![Godoc](https://godoc.org/github.com/qurami/casbin-cloud-storage-adapter?status.svg)](https://pkg.go.dev/github.com/qurami/casbin-cloud-storage-adapter)
 
 ---
 
@@ -13,7 +13,7 @@ With this library, Casbin can load or save policies from/to Google Cloud Storage
 ## Installation
 
 ```
-go get github.com/qurami/casbin-cloud-storage-adapter/v1
+go get github.com/qurami/casbin-cloud-storage-adapter
 ```
 
 ## Example Usage
